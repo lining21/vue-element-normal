@@ -1,12 +1,18 @@
 export default {
-  name: 'Home',
+  name: 'GlobalLayout',
   path: '/',
-  component: () => import('@/views/Home.vue'),
+  component: () => import('@/layout/GlobalLayout'),
+  meta: {
+    title: 'GlobalLayout'
+  },
   children: [
     {
-      name: 'About',
-      path: '/about',
-      component: () => import('@/views/About.vue'),
+      name: 'home',
+      path: '/home1',
+      component: () => import('@/views/Home.vue'),
+      meta: {
+        title: 'home'
+      }
     }
   ]
 };

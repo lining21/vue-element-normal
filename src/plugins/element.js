@@ -63,7 +63,9 @@ import {
   CollapseItem,
   Transfer,
   InfiniteScroll,
-  Divider
+  Divider,
+  Breadcrumb,
+  BreadcrumbItem
 } from 'element-ui';
 import CollapseTransition from 'element-ui/lib/transitions/collapse-transition';
 
@@ -128,7 +130,9 @@ import CollapseTransition from 'element-ui/lib/transitions/collapse-transition';
   CollapseItem,
   Transfer,
   InfiniteScroll,
-  Divider
+  Divider,
+  Breadcrumb,
+  BreadcrumbItem
 ].forEach((comp) => {
   Vue.use(comp);
 });
