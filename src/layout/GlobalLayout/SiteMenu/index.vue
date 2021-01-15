@@ -1,5 +1,6 @@
 <template>
   <el-menu
+    class="el-menu-vertical-demo"
     :default-active="activeMenu"
     :collapse="isCollapse"
     :unique-opened="true"

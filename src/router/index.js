@@ -8,6 +8,7 @@ const routeModules = importAll(require.context('./modules', true, /^(?!.*(?:inde
 
 // 基于 sort 字段排序
 routeModules.sort((a, b) => {
+  // Infinity 属性用于存放表示正无穷大的数值。
   const aSort = a.meta.sort || Infinity;
   const bSort = b.meta.sort || Infinity;
 

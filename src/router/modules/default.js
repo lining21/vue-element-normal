@@ -1,9 +1,9 @@
 export default {
-  name: 'GlobalLayout',
+  name: 'BasicLayout',
   path: '/',
-  component: () => import('@/layout/GlobalLayout'),
+  component: () => import('@/layout/BasicLayout'),
   meta: {
-    title: 'GlobalLayout'
+    title: 'BasicLayout'
   },
   children: [
     {

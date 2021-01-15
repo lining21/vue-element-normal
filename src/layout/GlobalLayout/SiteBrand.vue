@@ -20,6 +20,11 @@ export default {};
 
   &-logo {
     max-width: 40px;
+    // 1. Remove border when inside `a` element in IE 8/9/10.
+    img {
+      border: 0; // 1
+      max-width: 100%;
+    }
   }
 
   &-title {

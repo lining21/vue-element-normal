@@ -1,7 +1,7 @@
 /* 改变 icon 字体路径变量，必需 */
-$--font-path: '~element-ui/lib/theme-chalk/fonts';
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
 
-@import '~element-ui/packages/theme-chalk/src/index';
+@import "~element-ui/packages/theme-chalk/src/index";
 
 // 修改表格默认样式
 .el-table {
@@ -63,11 +63,11 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 }
 
 // 设置按钮长度
-.knowledge_base{
+.knowledge_base {
   .el-button {
     width: 120px;
   }
-  .el-upload-list{
+  .el-upload-list {
     width: 350px;
   }
 }
@@ -76,42 +76,63 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 .el-menu--horizontal > .el-menu-item:not(.is-disabled):focus {
   background-color: transparent;
 }
-.el-menu--horizontal > .el-submenu.is-active .el-submenu__title{
+.el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
   color: #ffffff;
 }
 .el-menu--horizontal > .el-submenu:focus .el-submenu__title,
-.el-menu--horizontal > .el-submenu:hover .el-submenu__title{
+.el-menu--horizontal > .el-submenu:hover .el-submenu__title {
   color: #ffffff;
 }
 
-.el-tooltip__popper.is-light.toolTipClass{
-  border: 1px solid #4DA1FF;
-  color:rgba(77,161,255,1);
-  background-color: #EFF7FF;
+.el-tooltip__popper.is-light.toolTipClass {
+  border: 1px solid #4da1ff;
+  color: rgba(77, 161, 255, 1);
+  background-color: #eff7ff;
 }
-.el-tooltip__popper.is-light.toolTipClass .popper__arrow{
-  border-color: #4DA1FF transparent;  //placement="top"时
+.el-tooltip__popper.is-light.toolTipClass .popper__arrow {
+  border-color: #4da1ff transparent; //placement="top"时
 }
-.el-tooltip__popper.is-light.rejectToolClass{
+.el-tooltip__popper.is-light.rejectToolClass {
   font-size: 16px;
   line-height: 26px;
-  border: 1px solid #FF586E;
-  color:#FF586E;
-  background-color: #FFF5F6;
+  border: 1px solid #ff586e;
+  color: #ff586e;
+  background-color: #fff5f6;
   padding: 13px 20px;
   max-width: 500px;
 }
-.el-tooltip__popper.is-light.rejectToolClass .popper__arrow{
-  border-color: #FF586E transparent;  //placement="top"时
+.el-tooltip__popper.is-light.rejectToolClass .popper__arrow {
+  border-color: #ff586e transparent; //placement="top"时
 }
-.el-message{
+.el-message {
   min-width: auto;
 }
-.blueBorder{
-  border: 1px solid #4DA1FF;
-  color: #4DA1FF;
-  &:hover{
-    border: 1px solid #4DA1FF;
+.blueBorder {
+  border: 1px solid #4da1ff;
+  color: #4da1ff;
+  &:hover {
+    border: 1px solid #4da1ff;
   }
 }
 
+// el- menu
+//-----------------------------------------------------
+.el-menu:not(.el-menu--popup) > .el-menu-item,
+.el-menu > .el-submenu > .el-submenu__title {
+  height: $headerBarHeight !important;
+  line-height: $headerBarHeight !important;
+}
+
+.el-menu.el-menu--horizontal {
+  border-bottom: 0;
+}
+
+.el-menu--horizontal > .el-submenu .el-submenu__icon-arrow {
+  margin-top: 2px;
+}
+
+// 子菜单过长时滚动
+.el-menu--popup {
+  max-height: 100vh;
+  overflow-y: auto;
+}
